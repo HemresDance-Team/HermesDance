@@ -4,10 +4,13 @@ import main2 from "../content/main2.jpg"
 import main3 from "../content/main3.jpg"
 import main4 from "../content/main4.jpg"
 import "./style.css"
+import wlogo from "../content/whitelogo.svg"
+import blogo from "../content/blacklogo.svg"
 function App() {
   return <>
       <main>
         <nav>
+            <img src={wlogo}/>
             <a href="about">О нас</a>
             <a href="directions">Направления</a>
             <a href="schedule">Расписание</a>
