@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
 import { type IMain } from "./model/model";
+import Modal from "./model/model";
 import { main_data } from "./data/data";
 import "./style.css";
 import wlogo from "../content/whitelogo.svg";
 // import blogo from "../content/blacklogo.svg";
+
 function App() {
   const [slider, setSlider] = useState(0);
 
@@ -14,6 +16,9 @@ function App() {
 
     return () => clearTimeout(timer);
   }, [slider]);
+
+  const [isModalOpen, setModalOpen] = useState(false);
+
   return (
     <>
       <main>
@@ -35,7 +40,19 @@ function App() {
         </section>
         <section className="directions">
           <div className="directions_grid">
-            <div>Армянские танцы</div>
+            <div>
+              <span>Армянские танцы</span>
+
+              <button onClick={() => setModalOpen(true)}>Открыть направление</button>
+              <Modal
+                isOpen={isModalOpen}
+                onClose={() => setModalOpen(false)}
+                title="Армянские танцы"
+              >
+                <br />
+                <span>То-то сё-то танцуем то-то.</span>
+              </Modal>
+            </div>
           </div>
         </section>
       </main>
