@@ -4,6 +4,7 @@ import Modal from "./model/model";
 import { main_data } from "./data/data";
 import "./style.css";
 import wlogo from "../content/whitelogo.svg";
+import teacher from "../content/teacher.PNG";
 // import blogo from "../content/blacklogo.svg";
 
 function App() {
@@ -39,6 +40,16 @@ function App() {
           </div>
         </section>
         <section className="directions">
+          <span className="directions_text">Направления</span>
+          <div className="grid">
+              <div className="cards-1">HIP-HOP<span className="card_more">Подробнее</span></div>
+              <div className="cards-1">DANCE MIX<span className="card_more">Подробнее</span></div>
+              <div className="cards-1">BREAKING<span className="card_more">Подробнее</span></div>
+              <div className="cards-1">JAZZ-FANK<span className="card_more">Подробнее</span></div>
+              <div className="cards-2">K-POP<span className="card_more">Подробнее</span></div>
+              <div className="cards-2">CONTEMPORARY<span className="card_more">Подробнее</span></div>
+              <div className="cards-2">LADIES<span className="card_more">Подробнее</span></div>
+          </div>
           <div className="directions_grid">
             <div>
               <span>Армянские танцы</span>
@@ -54,6 +65,26 @@ function App() {
               </Modal>
             </div>
           </div>
+        </section>
+        <section className="Teachers">
+            <span className="teachers_text">Наши педагоги</span>
+            <div className="grid">
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Гребнева Елизавета</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Родионова Анастасия</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Макарова Анжела</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Малова Наталья</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Матюшкина Ирина</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Маншилина Каролина</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Галкина Юлия</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Николаева Анна</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Урлапова Екатерина</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Алексеев Максим</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Маркин Роман</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Чибиряев Егор</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Федулова Таисия</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Завьялова Дарья</span></div>
+                <div className="grid_content"><img src={teacher}/><span className="teachers_name">Волкова Валерия</span></div>
+            </div>
         </section>
       </main>
     </>
