@@ -1,11 +1,11 @@
 /*ШРИФТЫ*/
 @font-face {
-    font-family: HirroSans;
-    src: url("/font/ofont.ru_Hirro\ Sans.ttf");
+  font-family: HirroSans;
+  src: url("/font/ofont.ru_Hirro\ Sans.ttf");
 }
 @font-face {
-    font-family: Bounded;
-    src: url("/font/ofont.ru_Bounded.ttf");
+  font-family: Bounded;
+  src: url("/font/ofont.ru_Bounded.ttf");
 }
 
 * {
@@ -108,12 +108,12 @@ nav img {
   font-family: HirroSans;
 }
 
-.directions_text{
-    display: flex;
-    justify-content: center;
-    background-color: #FC952F;
-    font-size: 3vw;
-    font-family: HirroSans;
+.directions_text {
+  display: flex;
+  justify-content: center;
+  background-color: #fc952f;
+  font-size: 3vw;
+  font-family: HirroSans;
 }
 
 .directions_grid {
@@ -201,73 +201,97 @@ nav img {
   }
 }
 /*НАПРАВЛЕНИЯ*/
+
+.directions {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.grid {
+  padding-top: 3vw;
+  width: 70%;
+  display: grid;
+  justify-content: center;
+
+  grid-template-columns: repeat(4, 15vw);
+  gap: 2vw;
+}
+
 .cards-1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #D4320A;
-    width: 10vw;
-    height: 25vh;
-    border-radius: 7%;
-    padding: 1.5vw;
-    font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #d4320a;
+  width: 10vw;
+  height: 25vh;
+  border-radius: 7%;
+  font-size: 1vw;
+}
+
+.cards2_container {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
 }
 .cards-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #D4320A;
-    width: 10vw;
-    height: 25vh;
-    border-radius: 7%;
-    padding: 1.5vw;
-    font-size: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d4320a;
+  width: 10vw;
+  height: 25vh;
+  border-radius: 7%;
+  padding: 1.5vw;
+  font-size: 1vw;
 }
-.card_more{
-    font-family: Bounded;
-    border:1px solid #fff;
+.card_more {
+  font-family: Bounded;
+  border: 1px solid #fff;
 }
 /*уЧИТЕЛЯ*/
-.Teachers{
-    padding-top: 3vw;
-    color: #fff;
-}
-.teachers_text{
-    display: flex;
-    justify-content: center;
-    background-color: #FC952F;
-    font-size: 3vw;
-    font-family: HirroSans;
-}
-.grid{
-    padding-top: 3vw;
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: repeat(4, 20vw);
-    gap:2 vw 3vw;
-    row-gap: 4vh;
 
+.grid_teacher {
+  padding-top: 3vw;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(4, 15vw);
+  gap: 2vw;
 }
-.grid_content{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    max-width: 200px;
-    overflow: hidden;
+.Teachers {
+  padding-top: 3vw;
+  color: #fff;
+}
+.teachers_text {
+  display: flex;
+  justify-content: center;
+  background-color: #fc952f;
+  font-size: 3vw;
+  font-family: HirroSans;
+}
+
+.grid_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 200px;
+  overflow: hidden;
 }
 .grid_content img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    border-radius: 10px;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
 }
 
 .teachers_name {
-    margin-top: 0.5vw;
-    text-align: center;
-    font-size: 14px;
-    word-break: break-word;
+  margin-top: 0.5vw;
+  text-align: center;
+  font-size: 14px;
+  word-break: break-word;
 }
