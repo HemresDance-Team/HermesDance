@@ -5,6 +5,12 @@ export interface IMain {
   id: number;
   image: string;
 }
+
+export interface IMedia {
+  id: number;
+  video: string;
+  text: string;
+}
 export interface ModalProps {
   isOpen: boolean; // Флаг открытия
   onClose: () => void; // Закрытие модалки

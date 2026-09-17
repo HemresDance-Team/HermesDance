@@ -2,10 +2,14 @@ import { useState, useEffect } from "react";
 import { type IMain } from "./model/model";
 import Modal from "./model/model";
 import { main_data } from "./data/data";
+
+import Fillial from "./Fillial";
+import Footer from "./Footer";
+import Teacher from "./Teacher";
+import Media from "./Media";
+
 import "./style.css";
 import wlogo from "../content/whitelogo.svg";
-import teacher from "../content/teacher.PNG";
-import logo from "../content/logo.svg";
 // import blogo from "../content/blacklogo.svg";
 
 function App() {
@@ -117,97 +121,10 @@ function App() {
             </div>
           </div>
         </section>
-        <section className="Teachers">
-          <span className="teachers_text">Наши педагоги</span>
-          <div className="grid_teacher">
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Гребнева Елизавета</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Родионова Анастасия</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Макарова Анжела</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Малова Наталья</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Матюшкина Ирина</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Маншилина Каролина</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Галкина Юлия</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Николаева Анна</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Урлапова Екатерина</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Алексеев Максим</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Маркин Роман</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Чибиряев Егор</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Федулова Таисия</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Завьялова Дарья</span>
-            </div>
-            <div className="grid_content">
-              <img src={teacher} />
-              <span className="teachers_name">Волкова Валерия</span>
-            </div>
-          </div>
-        </section>
-        <section className="Filial">
-            <span className="filial_text">Наши филиалы</span>
-            <div className="grid_filial">
-                <div className="grid-item">1</div>
-                <div className="grid-item">2</div>
-                <div className="grid-item">3</div>
-                <div className="grid-item">4</div>
-                <div className="grid-item">5</div>
-                <div className="grid-item">6</div>
-            </div>
-        </section>
-        <section className="Footer">
-            <div className="footer-links">
-                <a href="teachers">Педагоги</a>
-                <a href="schedule">Расписание</a>
-                <a href="directions">Направления</a>
-            </div>
-
-        
-            <img src={logo} alt="Логотип" className="footer-logo"/>
-            <div className="footer-text">
-                <p>Телефон: +7-985-766-41-86</p>
-                <a href=" https://vk.ru/hermesdance">Мы в ВК</a>
-                <a href="https://germes.mskobr.ru/">Официальный сайт Гермеса</a>
-            </div>
-        </section>
+        <Media />
+        <Teacher />
+        <Fillial />
+        <Footer />
       </main>
     </>
   );
