@@ -67,10 +67,26 @@ function Fillial() {
       <span className="filial_text">Наши филиалы</span>
 
       <div className="grid_filial">
-        <div className="grid-item">1</div>
-        <div className="grid-item">2</div>
-        <div className="grid-item">3</div>
-        <div className="grid-item">4</div>
+        <div className="grid-item">
+          <span className="phone_f">+7 (987) 654-32-10</span>
+          <span className="organization_f">«Гермес» на Темирязевскойы</span>
+          <span className="address_f">Тимирязевская, 28</span>
+        </div>
+        <div className="grid-item">
+          <span className="phone_f">+7 (987) 654-32-10</span>
+          <span className="organization_f">«Гермес» на Линейном</span>
+          <span className="address_f">Линейный проезд, 9</span>
+        </div>
+        <div className="grid-item">
+          <span className="phone_f">+7 (987) 654-32-10</span>
+          <span className="organization_f">«Гермес» на Дубнинской</span>
+          <span className="address_f">Дубнинская, 10</span>
+        </div>
+        <div className="grid-item">
+          <span className="phone_f">+7 (987) 654-32-10</span>
+          <span className="organization_f">«Гермес» на Учинской</span>
+          <span className="address_f">Учинская, 10</span>
+        </div>
 
         <div className="grid-item">
           <div
@@ -82,7 +98,11 @@ function Fillial() {
           />
         </div>
 
-        <div className="grid-item">6</div>
+        <div className="grid-item">
+          <span className="phone_f">+7 (987) 654-32-10</span>
+          <span className="organization_f">«Гермес» на Ленинградском</span>
+          <span className="address_f">Ленинградское ш. 45 стр. 3</span>
+        </div>
       </div>
     </section>
   );

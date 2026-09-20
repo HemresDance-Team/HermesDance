@@ -52,7 +52,7 @@ function App() {
               <button className="card_more" onClick={() => setModalOpen(true)}>
                 Открыть направление
               </button>
-              <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} title="Ladies">
+              <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} title="HIP-HOP">
                 <br />
                 <span>То-то сё-то танцуем то-то.</span>
               </Modal>
@@ -62,7 +62,7 @@ function App() {
               <button className="card_more" onClick={() => setModalOpen(true)}>
                 Открыть направление
               </button>
-              <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} title="Ladies">
+              <Modal isOpen={isModalOpen} onClose={() => setModalOpen(false)} title="DANCE MIX">
                 <br />
                 <span>То-то сё-то танцуем то-то.</span>
               </Modal>

@@ -496,7 +496,8 @@ nav img {
   color: #fff;
   border: 1px solid white;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content:space-around;
   align-items: center;
   font-size: 24px;
 }
@@ -504,6 +505,7 @@ nav img {
 /* Footer */
 
 .Footer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -518,9 +520,18 @@ nav img {
 }
 
 .footer-text {
+
+  width: 100%;
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
   gap: 0.5vw;
+}
+
+hr{
+    margin: auto;
+    width: 100%;
+    color: #D8D8D8;
 }
 
 .footer-text {

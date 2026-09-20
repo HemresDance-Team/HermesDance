@@ -19,7 +19,7 @@ export const main_data: IMain[] = [
 ];
 
 export const media_data: IMedia[] = [
-  { id: 1, video: video1, text: "squirell" },
+  { id: 1, video: video1, text: "Jazz-Funk" },
   { id: 2, video: video2, text: "pigs" },
   { id: 3, video: "Hi", text: "something" },
   { id: 4, video: "Hi", text: "something" },
