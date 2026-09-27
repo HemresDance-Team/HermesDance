@@ -7,6 +7,7 @@ import Fillial from "./Fillial";
 import Footer from "./Footer";
 import Teacher from "./Teacher";
 import Media from "./Media";
+import Feedback from "./Feedback"
 
 import "./style.css";
 import wlogo from "../content/whitelogo.svg";
@@ -124,6 +125,7 @@ function App() {
         <Media />
         <Teacher />
         <Fillial />
+        <Feedback />
         <Footer />
       </main>
     </>

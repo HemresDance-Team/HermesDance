@@ -501,6 +501,16 @@ nav img {
   align-items: center;
   font-size: 24px;
 }
+/*Feedback*/
+
+.form_feedback ::placeholder{
+    width: 473px;
+    height: 45px;
+    border: none;
+    background-color: #000;
+    font-family: Bounded;
+    color: #fff ;
+}
 
 /* Footer */
 
