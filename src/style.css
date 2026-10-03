@@ -575,3 +575,110 @@ hr{
 .footer-links a:hover {
   text-decoration: underline;
 }
+.Feedback {
+    background-color: #dc2e0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px;
+    gap: 60px;
+    font-family: Bounded;
+}
+
+.Feed_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feedback_img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    background-color: #dcdcdc;
+    min-height: 250px;
+}
+
+.feedback_form {
+    flex: 1;
+    max-width: 500px;
+    color: white;
+}
+
+.feedback_input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    font-size: 24px;
+    padding: 10px 0;
+    margin-bottom: 25px;
+    outline: none;
+    font-weight: 300;
+}
+
+.feedback_input::placeholder {
+    color: white;
+    opacity: 1;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.feedback_checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+.feedback_checkbox {
+    display: none;
+}
+
+.feedback_checkbox-custom {
+    width: 24px;
+    height: 24px;
+    border: 2px solid white;
+    margin-right: 15px;
+    display: inline-block;
+    position: relative;
+    flex-shrink: 0; /* Чтобы не сжимался */
+}
+
+/* Галочка внутри (появляется при checked) */
+.feedback__checkbox:checked + .feedback__checkbox-custom::after {
+    content: '';
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 6px;
+    height: 12px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.feedback__checkbox-text {
+    font-weight: 300;
+}
+
+/* Стили для кнопки */
+.feedback__btn {
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    color: #333;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    text-transform: none;
+}
+
+.feedback__btn:hover {
+    opacity: 0.9;
+}
