@@ -11,6 +11,23 @@ export interface IMedia {
   video: string;
   text: string;
 }
+
+export interface ITeacher {
+  id: number;
+  name: string;
+  direction: string;
+  photo: string;
+  video: string;
+  price: string;
+  schedule: string;
+  bio: string;
+}
+
+export interface IDirection {
+  slug: string;
+  label: string;
+}
+
 export interface ModalProps {
   isOpen: boolean; // Флаг открытия
   onClose: () => void; // Закрытие модалки

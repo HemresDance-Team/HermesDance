@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { type IMain } from "./model/model";
 import Modal from "./model/model";
 import { main_data } from "./data/data";
+import { Link } from "react-router-dom";
 
 import Fillial from "./Fillial";
 import Footer from "./Footer";
@@ -31,14 +32,14 @@ function App() {
         <section className="main_section">
           <nav>
             <img src={wlogo} />
-            <a href="about">О нас</a>
-            <a href="directions">Направления</a>
-            <a href="schedule">Расписание</a>
-            <a href="teachers">Педагоги</a>
-            <a href="prices">Цены</a>
-            <a href="branches">Филиалы</a>
-            <a href="media">Медиа</a>
-            <a href="contacts">Контакты</a>
+            <a href="/">О нас</a>
+            <a href="/">Направления</a>
+            <a href="/">Расписание</a>
+            <Link to="Teacher">Педагоги</Link>
+            <a href="/">Цены</a>
+            <a href="/">Филиалы</a>
+            <a href="/">Медиа</a>
+            <a href="/">Контакты</a>
           </nav>
           <div className="slider">
             {<img src={main_data[slider].image} alt="main_photo" className="main_section_photo" />}

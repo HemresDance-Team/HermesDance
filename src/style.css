@@ -247,49 +247,6 @@ nav img {
   font-family: Bounded;
   border: 1px solid #fff;
 }
-/*уЧИТЕЛЯ*/
-
-.grid_teacher {
-  padding-top: 3vw;
-  width: 100%;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: repeat(4, 15vw);
-  gap: 2vw;
-}
-.Teachers {
-  padding-top: 3vw;
-  color: #fff;
-}
-.teachers_text {
-  display: flex;
-  justify-content: center;
-  background-color: #fc952f;
-  font-size: 3vw;
-  font-family: HirroSans;
-}
-
-.grid_content {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 200px;
-  overflow: hidden;
-}
-.grid_content img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  display: block;
-  border-radius: 10px;
-}
-
-.teachers_name {
-  margin-top: 0.5vw;
-  text-align: center;
-  font-size: 14px;
-  word-break: break-word;
-}
 
 /* Media */
 
@@ -497,7 +454,7 @@ nav img {
   border: 1px solid white;
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-around;
   align-items: center;
   font-size: 24px;
 }
@@ -520,7 +477,6 @@ nav img {
 }
 
 .footer-text {
-
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -528,10 +484,10 @@ nav img {
   gap: 0.5vw;
 }
 
-hr{
-    margin: auto;
-    width: 100%;
-    color: #D8D8D8;
+hr {
+  margin: auto;
+  width: 100%;
+  color: #d8d8d8;
 }
 
 .footer-text {
