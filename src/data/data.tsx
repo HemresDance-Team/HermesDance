@@ -12,6 +12,7 @@ import video2 from "../../content/media/media_page_video/pigs.mp4";
 import teacher1 from "../../content/media/teacher_media/teacher1.jpg";
 import teacher13 from "../../content/media/teacher_media/teacher13.png";
 
+/* Данные созданных интерфейсов */
 import type { IMedia, ITeacher, IDirection } from "../model/model";
 import type { IMain } from "../model/model";
 
@@ -25,7 +26,7 @@ export const main_data: IMain[] = [
 export const media_data: IMedia[] = [
   { id: 1, video: video1, text: "Jazz-Funk" },
   { id: 2, video: video2, text: "pigs" },
-  { id: 3, video: "Hi", text: "something" },
+  { id: 3, video: video3, text: "Hip-hop" },
   { id: 4, video: "Hi", text: "something" },
   { id: 5, video: "Hi", text: "something" },
   { id: 6, video: "Hi", text: "something" },
@@ -49,7 +50,7 @@ export const teacher_data: ITeacher[] = [
     name: "Родионова Анастасия",
     direction: "hip-hop",
     photo: "/images/teachers/teacher-2.jpg",
-    video: "/videos/teachers/teacher-2.mp4",
+    video: "",
     price: "1500 ₽",
     schedule: "Вт, Чт — 19:00",
     bio: "Преподаватель hip-hop для начинающих и продолжающих. На занятиях уделяет внимание технике и музыкальности.",
@@ -88,7 +89,7 @@ export const teacher_data: ITeacher[] = [
     id: 6,
     name: "Маншилина Каролина",
     direction: "dance-mix",
-    photo: "/images/teachers/teacher-6.jpg",
+    photo: "",
     video: "/videos/teachers/teacher-6.mp4",
     price: "1500 ₽",
     schedule: "Пн, Чт — 17:30",
